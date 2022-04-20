@@ -12,17 +12,19 @@ body {
 
 .container{
 width: 1140px;
-margin: 0 auto;
+margin: 20px auto;
 /* height: 100vh; */
 /* position: relative;
 display: flex; */
-outline: 2px solid red;
+outline: 6px dotted rgb(234, 0, 255);
 }
 
 .seccion{
-    width: 1140px;
-    margin: 0 auto;
-    outline: 2px solid rgb(255, 0, 187);
+    width: 100%;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+
+    /* outline: 2px solid rgb(255, 0, 187); */
 }
 
 /* HASTA ACÁ REGLAS GENERALES ---------------------------------------------------------------------*/
@@ -40,6 +42,7 @@ header .container{
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    padding: 0px;
     /* overflow: hidden; */
 }
 
@@ -47,13 +50,15 @@ header .container{
     width: 260px;
 } 
 
+
+
 nav a{
-    margin: 0 5px;
+    margin: 0 15px;
     display: inline-block;
-    color: #6c6c6c;
-    padding: 5 50px;
-    font-size: 18px;
-    font-weight:800;
+    color: #8d8d8d;
+    /* padding: 5 50px; */
+    font-size: 20px;
+    font-weight:700;
     text-decoration: none;
 
 }
@@ -78,35 +83,52 @@ width: 200px;
 
 .container.seccion {
     position: relative;
-    height: 700px;
+    height: 700px; /* Ver como optimizar altura */
     padding-bottom: 0px;
-    margin: 0 auto 10px;
+    padding-left: 15px;
+    margin: 20 auto 10px;
     overflow: hidden;
+    /* outline: 4px dotted red; */
+
 }
 
 .bloque-banner-imagen{
     width: 40%  ;
     position: absolute;
-    right: 15px;
+    right:0;
     bottom: 0;
+    /* outline: 2px solid blue; */
+    overflow: hidden;
 }
 .bloque-banner-tarjeta{
     width: 100%  ;
-    margin: 20px;
-    /* position: absolute; */
-    
+    padding: 0;
+    /* margin: 20px; */
+    /* outline: 4px dotted blue;    */
 }
 
 .seccion 
 .bloque-banner-contenido{
-    position: absolute; 
-    top: 60%;
-    left: 70px;
-    width: 600px;
+    width: 50%;
+    margin-top: 40px;
+    margin-left: 20px;
     color: #757575;
+    padding-bottom: 20px;
+    /* outline: 4px dotted red; */
     
     
 }
+.bloque-banner-contenido ul {
+    display: flex;
+    justify-content: flex-start;
+    /* outline: 2px solid blue; */
+    
+}
+
+.bloque-banner-contenido ul li{
+    margin: 0 10px;
+}
+
 .bloque-banner-contenido h2{
     font-size: 45px;
     margin-bottom: 10px;
@@ -115,7 +137,7 @@ width: 200px;
 
 .bloque-banner-contenido p{
     font-size: 20px;
-   
+    font-weight: 600;
 }
 
 /* HASTA ACÁ HAY BANNER/HOME ---------------------------------------------------------------------- */
@@ -159,3 +181,33 @@ width: 200px;
 }
 
 /* HASTA ACÁ HAY SKILLS ---------------------------------------------------------------------- */
+
+
+#contacto .container{
+    width: 70%;
+    height: 540px;
+    margin: 80px auto;
+    border-radius: 20px;
+    border: solid grey;
+
+}
+
+#contacto .row{
+    height: 440px;
+    margin: 50px auto;
+}
+#contacto .container-contacto{
+    width: 50%;
+}
+
+#contacto .container-contacto .bloque-contacto{
+    height: 220px;
+}
+#contacto .container-form{
+    width: 50%;
+}
+
+
+
+
+/* HASTA ACÁ HAY CONTACTO ---------------------------------------------------------------------- */
