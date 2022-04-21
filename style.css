@@ -4,11 +4,9 @@
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
-}
-
-body { 
     font-family: 'Outfit', sans-serif;
 }
+
 
 .container{
 width: 1140px;
@@ -16,7 +14,7 @@ margin: 20px auto;
 /* height: 100vh; */
 /* position: relative;
 display: flex; */
-outline: 6px dotted rgb(234, 0, 255);
+/* outline: 4px dotted rgb(234, 0, 255); */
 }
 
 .seccion{
@@ -92,13 +90,20 @@ width: 200px;
 
 }
 
-.bloque-banner-imagen{
+.bloque-banner-imagen img{
     width: 40%  ;
     position: absolute;
     right:0;
     bottom: 0;
-    /* outline: 2px solid blue; */
-    overflow: hidden;
+    padding:0;
+}
+.imagen-fondo img{
+    width: 40%  ;
+    position: absolute;
+    right:0;
+    bottom: 0;
+    padding:0;
+    z-index: -1;
 }
 .bloque-banner-tarjeta{
     width: 100%  ;
@@ -147,11 +152,9 @@ width: 200px;
     grid-template-columns: repeat(3,1fr);
     grid-auto-rows: 350px;
     grid-gap: 15px;
-    
 }
 
 .card{
-
     outline: solid gray;  
     border-radius: 20px;
 
@@ -185,28 +188,50 @@ width: 200px;
 
 #contacto .container{
     width: 70%;
-    height: 540px;
+    height: 440px;
     margin: 80px auto;
     border-radius: 20px;
-    border: solid grey;
-
 }
 
 #contacto .row{
-    height: 440px;
+    height: 400px;
     margin: 50px auto;
+}
+#contacto .container{
+    box-shadow: 4px 4px 30px #757575;
+    backdrop-filter: blur(50px);
 }
 #contacto .container-contacto{
     width: 50%;
 }
+#contacto .container h2{
+   font-size: 20px;
+   font-weight: 600;
+   color: #757575;
+ 
+}
 
 #contacto .container-contacto .bloque-contacto{
-    height: 220px;
+    height: 200px;
+    padding-top: 40px;
+    padding-left: 40px;
+    font-weight: 600;
 }
 #contacto .container-form{
     width: 50%;
 }
+#contacto .container-form {
+    padding: 40px ;
+}
 
+#contacto .form-control{
+    border-color: #1D84A9;
+    border-width: 2px;
+    border-style: solid;
+}
+#contacto #form-nombre{
+    margin-top: 50px;
+}
 
 
 

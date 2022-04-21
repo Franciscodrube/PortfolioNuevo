@@ -24,7 +24,7 @@
 
 
 <body>
-
+    
     <!-- ENCABEZADO -->
     <header>
         <!-- <div class="container bg-dark d-flex justify-content-center ">
@@ -66,13 +66,10 @@
         <!-- SECCIÓN BANNER/HOME -->
         <section id="home" class="container seccion"> 
            <div class="container">
-                <div class="row">
                     <div class="bloque-banner-tarjeta">
                         <img src="/img/tarjeta.png" alt="">
                     </div>  
-                </div>
-
-                <div class="row">
+             
                     <div class="bloque-banner-contenido">
                         <h2>Skills</h2>
                         <ul>
@@ -87,13 +84,13 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatem, adipisci eum optio minima sapiente consequuntur quasi sunt autem tenetur deserunt obcaecati laboriosam consequatur commodi. Ea nam iste eligendi dolorum.</p>
                     </div>
 
-                    <div class="bloque-banner-imagen">
-                        <img src="/img/foto y fondo.png" alt="">
-                    </div>
+                </div>     
+                
+                
+                <div class="bloque-banner-imagen">
+                    <img src="/img/foto y fondo.png" alt="">
                 </div>
-           </div>     
             
-          
                 <!--             
                 <div class="bloque-banner-imagen">
                     <img src="/img/foto y fondo.png" alt="">
@@ -116,19 +113,27 @@
         </section>
 
         <!-- SECCIÓN EXPERIENCIA -->
-        <section id="experiencia" class="seccion">
+        <section id="experiencia" class="container seccion">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quibusdam sed. Nesciunt quis consectetur eaque, pariatur laudantium soluta ipsa omnis ea quaerat tempore, atque provident cum corporis veritatis porro nihil.</p>
+
+                <div class="imagen-fondo">
+                    <img src="/img/elipse.png" alt="">
+                </div>
         </section> 
             
         <!-- SECCIÓN EDUCACIÓN -->
         
-        <section id="educacion" class="seccion">
+        <section id="educacion" class="container seccion">
             
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quibusdam sed. Nesciunt quis consectetur eaque, pariatur laudantium soluta ipsa omnis ea quaerat tempore, atque provident cum corporis veritatis porro nihil.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quibusdam sed. Nesciunt quis consectetur eaque, pariatur laudantium soluta ipsa omnis ea quaerat tempore, atque provident cum corporis veritatis porro nihil.</p>
+
+                <div class="imagen-fondo">
+                    <img src="/img/elipse.png" alt="">
+                </div>
         </section> 
             
         <!-- SECCIÓN SKILLS -->
-        <section id="skills" class="seccion">
+        <section id="skills" class="container seccion">
             <div class="container grid">
                 <div class="card">
                     <div class="img-skills">
@@ -175,10 +180,19 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eaque voluptatem obcaecati! Quia nostrum</p>
                 </div>
             </div>
+
+            <div class="imagen-fondo">
+                <img src="/img/elipse.png" alt="">
+            </div>
+
         </section>
             
         <!-- SECCIÓN PORTFOLIO -->
         <section id="portfolio" class="container seccion">
+
+            <div class="imagen-fondo">
+                <img src="/img/elipse.png" alt="">
+            </div>
             
             <div class="container">
                 <div class="row">
@@ -194,49 +208,60 @@
                 </div>
             </div>
 
-
-
-
-
-                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quibusdam sed. Nesciunt quis consectetur eaque, pariatur laudantium soluta ipsa omnis ea quaerat tempore, atque provident cum corporis veritatis porro nihil.</p> -->
-            </section>
+            <div class="imagen-fondo">
+                <img src="/img/elipse.png" alt="">
+            </div>
+        </section>
             
-            <!-- SECCIÓN CONTACTO -->
-            <section id="contacto" class="container seccion">
+        <!-- SECCIÓN CONTACTO -->
+        <section id="contacto" class="container seccion">
                 
-                <div class="container">
-                    <div class="row">
-                        <div class="container-contacto">
-                            <div class="bloque-contacto">
-                                <h2>UBICACIÓN</h2>
-                                <ul>
-                                    <li> Independencia 916 1 B </li>
-                                    <li>Córdoba</li>
-                                    <li>C.P. 5000</li>
-                                    <li>Argentina</li>
-                                </ul>
-                            </div>
-
-                            <div class="bloque-contacto">
-                                <h2>DATOS DE CONTACTO</h2>
-                                <ul>
-                                    <li> franciscodrube@gmail.com </li>
-                                    <li>+549 351 6334199</li>
-                                </ul>
-                            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="container-contacto">
+                        <div class="bloque-contacto">
+                            <h2>UBICACIÓN</h2>
+                            <ul>
+                                <li> Independencia 916 1 B </li>
+                                <li>Córdoba</li>
+                                <li>C.P. 5000</li>
+                                <li>Argentina</li>
+                            </ul>
                         </div>
-                        <div class="container-form">
-                            <h2>FORMULARIO DE CONTACTO</h2>
-                            <form action="">
 
-                                
-                            </form>
+                        <div class="bloque-contacto">
+                            <h2>DATOS DE CONTACTO</h2>
+                            <ul>
+                                <li> franciscodrube@gmail.com </li>
+                                <li>+549 351 6334199</li>
+                            </ul>
                         </div>
                     </div>
 
+                    <div class="container-form">
+                        <h2>FORMULARIO DE CONTACTO</h2>
+                        
+                        <div class="mb-3">
+                            <!-- <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label> -->
+                            <input type="text" class="form-control" id="form-nombre" placeholder="Nombre y apellido..." >
+                        </div>
+
+                        <div class="mb-3">
+                            <!-- <label for="exampleFormControlInput2" class="form-labe2">Email address</label> -->
+                            <input type="email" class="form-contro1" id="form-mail" placeholder=" e-mail...">
+                            </div>
+                            <div class="mb-3">
+                            <!-- <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label> -->
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Mensaje..."></textarea>
+                        </div>
+                    </div>
                 </div>
+
+            </div>
                 
-                
+            <div class="imagen-fondo">
+                <img src="/img/elipse.png" alt="">
+            </div>
                 
         </section>
 
