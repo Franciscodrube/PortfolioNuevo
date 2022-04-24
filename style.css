@@ -258,4 +258,35 @@ nav a{
     margin-top: 50px;
 }
 
-/* HASTA ACÁ HAY CONTACTO ---------------------------------------------------------------------- */
+/*      FOOTER! ---------------------------------------------------------------------- */
+
+.barra-footer{
+    background-color: gray;
+    text-align: center;
+    padding: 20px 15px;
+}
+
+footer ul
+{
+padding-left: 0;
+margin: 0;
+}
+
+footer ul li
+{
+display: inline-block;
+font-size: x-large;
+padding: 10px;
+}
+
+
+footer a
+{
+color: #0E6A8B;
+margin-bottom: 20px;
+}
+
+footer .box {
+    text-align: right;
+
+}
