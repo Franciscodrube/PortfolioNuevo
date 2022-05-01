@@ -8,66 +8,45 @@
     font-family: 'Outfit', sans-serif;
 }
 
-.container{
-width: 100%;
-margin: 10px auto;
-}
-
 .seccion{
-    width: 100%;
-    margin: 0 auto 20px;
-    border-radius: 10px;
+    margin: 0 auto 1.25rem;
+    border-radius: 0.625rem;
     position: relative;
     overflow: hidden;
-    height: auto;
 }
 p{
-    font-size: 20px;
     font-weight: 600;
     color: #726B6B;
 }
 
 h1{
-    font-size: 36px;
     font-weight: 800;
     color: #726B6B;
-    margin: 15 10px;
-    padding-left: 10px;
+    margin: 1rem 0.625rem;
 }
 
 h2{
-    font-size: 34px;
     color: #0E6A8B;
     font-weight: 700;
-    margin: 5 10px;
-    padding-left: 10px;
+    margin: 0.312 0.625rem;
 }
 
 h3{
-    font-size: 20px;
     color: #726B6B;
     font-weight: 700; 
-    margin: 15 10px;
-    padding-left: 10px;
+    margin: 0.312 0.625rem;
 }
 
-.imagen-fondo {
-    width: 30%;
-    position: absolute;
-    right:0;
-    bottom: 0;
-    padding:0;
-    z-index: -1;
-}
 /*      HEADER! ---------------------------------------------------------------------- */
-header .container{
+.header > .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 #logo-ap img{
-    width: 260px;
+    width: 100%;
+    min-width: 7rem;
 } 
 
 .navbar a{
@@ -98,6 +77,12 @@ header .container{
     color: #fff;
     margin: 0 20px;
 }
+
+/* @media (max-width: 575.98px) { 
+    .header {
+        display: none;
+    }
+} */
 /*      HOME! ---------------------------------------------------------------------- */
 
 .img-fondo-home {
@@ -276,6 +261,15 @@ header .container{
     font-weight: 600;
     color: #fff;
     background-color: #0E6A8B;
+}
+
+.imagen-fondo {
+    width: 30%;
+    position: absolute;
+    right:0;
+    bottom: 0;
+    padding:0;
+    z-index: -1;
 }
 
 /*      FOOTER! ---------------------------------------------------------------------- */
