@@ -44,7 +44,7 @@ h3{
     align-items: center;
 }
 .logo-ap-container{
-    width: 10%;
+    width: 20%;
 }
 .logo-ap > img {
     width: 100%;
@@ -52,10 +52,7 @@ h3{
 } 
 
 .navbar a{
-    margin: 0 0.625rem;
-    color: #726B6B;
-    font-weight:700;
-    text-decoration: none;
+    display: none;
 }
 
 .header-iconos{
@@ -64,17 +61,31 @@ h3{
 }
 
 .header-iconos a{
+    font-size: 1rem;
+    color: #726B6B;
+    margin: 0 .5rem;
+}
+/* .header-iconos a{
     font-size: 2rem;
     color: #726B6B;
     margin: 0 .031rem;
-}
-
+} */
 
 .navbar a:hover{
     background-color: #efd81d;
     border-radius: 5px;
     color: #fff;
     margin: 0 20px;
+}
+
+/*      MAIN! ---------------------------------------------------------------------- */
+.mobile-hamb{
+    background-color: #0E6A8B;
+}
+.mobile-hamb a{
+    font-size: 1rem;
+    color: #fff;
+    margin: 0 .5rem;
 }
 
 
@@ -284,9 +295,16 @@ footer a{
 }
 
 
+/*      MEDIAS! ---------------------------------------------------------------------- */
+
 @media (max-width: 600px) { 
-    .header .navbar {
-        display: none;
+    .navbar {
+        display: flex;
+        justify-content: center;
+        margin: 0 0.625rem;
+        color: #726B6B;
+        font-weight:700;
+        text-decoration: none;
     }
     .logo-ap-container{
         width: 30%;
