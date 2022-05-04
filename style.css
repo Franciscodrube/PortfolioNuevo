@@ -38,22 +38,22 @@ h3{
 }
 
 /*      HEADER! ---------------------------------------------------------------------- */
-.header > .container{
+.header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
-
-#logo-ap img{
+.logo-ap-container{
+    width: 10%;
+}
+.logo-ap > img {
     width: 100%;
     min-width: 7rem;
 } 
 
 .navbar a{
-    margin: 0 10px;
-    display: inline-block;
+    margin: 0 0.625rem;
     color: #726B6B;
-    font-size: 25px;
     font-weight:700;
     text-decoration: none;
 }
@@ -78,11 +78,7 @@ h3{
     margin: 0 20px;
 }
 
-/* @media (max-width: 575.98px) { 
-    .header {
-        display: none;
-    }
-} */
+
 /*      HOME! ---------------------------------------------------------------------- */
 
 .img-fondo-home {
@@ -97,7 +93,6 @@ h3{
     padding: 0;
 }
 
-.seccion 
 .bloque-banner-contenido{
     width: 50%;
     margin-top: 40px;
@@ -287,4 +282,11 @@ footer a{
     color: #0E6A8B;
     margin-bottom: 20px;
     font-size: 50px;
+}
+
+
+@media (max-width: 575.98px) { 
+    .header {
+        display: none;
+    }
 }
