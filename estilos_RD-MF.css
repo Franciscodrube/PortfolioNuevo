@@ -262,30 +262,33 @@ h3{
 }
 
 /*      CONTACTO! ---------------------------------------------------------------------- */
-#contacto .container{
-    width: 70%;
-    height: auto;
-    margin: 80px auto;
-    border-radius: 20px;
+.container-contacto{
+    width: 90%;
+    margin: 1rem auto;
+    border-radius: 1.25rem;
     box-shadow: 4px 4px 30px #757575;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(3rem);
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    justify-content: center;
 }
 
 .bloque-contacto h3{
-    margin: 30px 10px;
+    font-size: 1rem;
+    margin: 1rem;
 }
 
-#contacto .form-control{
+.form-control{
     border-color: #1D84A9;
     border-width: 2px;
     border-style: solid;
+    width: 80%;
 }
 
 .enviar-btn{
-    padding: 10px;
-    width: 200px;
+    padding: .325rem;
+    width: 40%;
+    min-width: 3rem;
     font-weight: 600;
     color: #fff;
     background-color: #0E6A8B;
@@ -403,13 +406,20 @@ h3{
         flex-direction: row;
         margin: 1rem 0rem;
     }
-        
+
 /*FOOTER! */
     .footer p, .footer h4{
         display: block;
     }
-}
 
+/* CONTACTO */
+
+    .bloque-contacto iframe{
+        width: 15rem;
+        height: 10rem;
+    }
+
+}
 @media (min-width: 900px) {
 /*HEADER!*/
     .navbar a{
@@ -425,11 +435,15 @@ h3{
         margin: 0.525rem;
     }
 
-/* EDUCACION
-    .grid-educacion{
-        grid-template-columns: 2fr auto;
-        grid-template-rows: 2fr;
-    } */
+/* CONTACTO*/
+
+    .container-contacto{
+        width: 70%;
+    }   
+    .bloque-contacto iframe{
+        width: 20rem;
+        height: 15rem;
+    }
 }
 
 
