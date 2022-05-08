@@ -38,9 +38,10 @@ h3{
 }
 
 /*      HEADER! ---------------------------------------------------------------------- */
+
 .header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .logo-ap-container{
@@ -48,10 +49,10 @@ h3{
 }
 .logo-ap > img {
     width: 100%;
-    min-width: 7rem;
+    min-width: 4rem;
 } 
 
-.navbar a{
+.navbar {
     display: none;
 }
 
@@ -65,11 +66,7 @@ h3{
     color: #726B6B;
     margin: 0 .5rem;
 }
-/* .header-iconos a{
-    font-size: 2rem;
-    color: #726B6B;
-    margin: 0 .031rem;
-} */
+
 
 .navbar a:hover{
     background-color: #efd81d;
@@ -92,33 +89,34 @@ h3{
 /*      HOME! ---------------------------------------------------------------------- */
 
 .img-fondo-home {
-    width: 30%;
-    position: absolute;
-    right:0;
-    bottom: 0;
-    padding:0;
+    display: none;
 }
+
 .img-tarjeta{
-    width: 50%;
-    padding: 0;
+    width: 80%;
+    min-width: 15rem;
+    margin: 1rem auto .5rem;
+    padding-left: 1rem;
 }
 
 .bloque-banner-contenido{
-    width: 50%;
-    margin-top: 40px;
-    margin-left: 20px;
+    margin-top: 0rem;
+    margin-left: 1.25rem;
 }
 
 .bloque-banner-contenido h2{
-    margin: 20px auto;
+    margin: .75rem auto;
 }
 .bloque-banner-contenido ul {
     display: flex;
     justify-content: flex-start;
+    padding: 0;
 }
-
+.bloque-banner-contenido i {
+   font-size: 1.5rem;
+}
 .bloque-banner-contenido ul li{
-    margin: 0 10px;
+    margin: 0 .625rem;
 }
 
 
@@ -126,41 +124,51 @@ h3{
 
 /*      EDUCACIÓN! ---------------------------------------------------------------------- */
 
-#educacion .col-6{
-    padding: 20px;
+.grid-educacion{
+    display: flex;
+    flex-direction: column;
 }
 
-#edu-argprog{
-    margin: 20px auto;
-    background-color: #F6BEA5;
-    border-radius: 20px;
-    box-shadow: 2px 2px 10px #757575;
-    padding-top: 20px;
-    padding-left: 25px;
+.tarjeta-ed{
+    width: 80%;
+    height: max-content;
+    margin: 1rem auto;
     position: relative;
+    border-radius: 1.25rem;
+    box-shadow: 2px 2px 10px #757575;
+    padding-top: 1.25rem;
+    padding-left: 1.5rem;
+    
 }
-#edu-ingbio{
-    border-radius: 20px;
-    box-shadow: 4px 4px 30px #757575;
-    padding-top: 20px;
-    padding-left: 25px;
-    position: relative;  
+.tarjeta-ed p{
+    padding: 1rem;
+}
+.tarjeta-ap{
+    background-color: #F6BEA5;
 }
 
-#educacion .col-12 img{
-    width: 100px;
+.tarjeta-ed img{
+    width: 15%;
+    min-width: 1.25rem;
     margin: 0;
     padding: 0;
     position: absolute;
     right: 0;
     top: 0;
-    border-radius: 0 20px    0 0;
+    border-radius: 0 1.25rem 0 0;
+    display: none;
 }
 
+.nav-cv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 1rem;
+
+}
 .nav-cv a{
-    margin: 0 15px;
+    margin: 0 2rem;
 }
-
 /*      SKILLS! ---------------------------------------------------------------------- */
 
 #skills .grid{
@@ -278,39 +286,142 @@ h3{
 }
 
 /*      FOOTER! ---------------------------------------------------------------------- */
-footer {
+.footer {
     text-align: center;
 }
 .barra-footer{
     background-color: gray;
-    padding: 20px 15px;
+    padding: 1rem 0.6rem;
     color: #fff;
-    font-size: 16px;
+    font-size: .6rem;
 }
 
-footer a{
+.footer p,h4{
+   display: none;
+}
+.col-4{
+    align-items: center;
+}
+.footer a{
     color: #0E6A8B;
-    margin-bottom: 20px;
-    font-size: 50px;
+    margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
+.footer h4{
+    font-size: 1rem;
+}
 
 /*      MEDIAS! ---------------------------------------------------------------------- */
 
-@media (max-width: 600px) { 
+
+@media (min-width: 601px) { 
+/*HEADER!*/
     .navbar {
         display: flex;
         justify-content: center;
+    }
+    .navbar a{
+        margin: 0 0.325rem;
+        color: #726B6B;
+        font-weight:700;
+        text-decoration: none;
+        font-size: 0.7rem;
+    }
+    .logo-ap-container{
+        width: 15%;
+    }
+
+    .header-iconos a{
+        font-size: 1rem;
+        color: #726B6B;
+        margin: 0.31rem;
+    }
+    .mobile-hamb{
+        display: none
+    }
+
+/*HOME!*/
+    .img-fondo-home {
+        display: inline-block;
+        width: 30%;
+        position: absolute;
+        right:0;
+        bottom: 0;
+        padding:0;
+    }
+    .img-tarjeta{
+        width: 50%;
+    }
+    
+    .bloque-banner-contenido{
+        width: 50%;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    
+    .bloque-banner-contenido h2{
+        margin: 20px auto;
+    }
+    .bloque-banner-contenido ul {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .bloque-banner-contenido ul li{
+        margin: 0 10px;
+    }
+
+/*EDUCACION! */
+    .tarjeta-ed img{
+        display: block;
+    }
+
+
+/*FOOTER! */
+    .footer p,h4{
+        display: block;
+    }
+}
+
+@media (min-width: 900px) {
+/*HEADER!*/
+    .navbar a{
+        margin: 0 0.525rem;
+        color: #726B6B;
+        font-weight:700;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    .header-iconos a{
+        font-size: 1.2rem;
+        color: #726B6B;
+        margin: 0.525rem;
+    }
+
+/* EDUCACION
+    .grid-educacion{
+        grid-template-columns: 2fr auto;
+        grid-template-rows: 2fr;
+    } */
+}
+
+
+@media (min-width: 1200px) {
+/*HEADER!*/
+    .navbar a{
         margin: 0 0.625rem;
         color: #726B6B;
         font-weight:700;
         text-decoration: none;
-    }
-    .logo-ap-container{
-        width: 30%;
+        font-size: 1.5rem;
     }
     .header-iconos a{
-    font-size: 1rem;
-    margin: 0 .5rem;
+        font-size: 2rem;
+        color: #726B6B;
+        margin: 0.61rem;
     }
+
+/*HOME!*/
+
 }
