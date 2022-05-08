@@ -239,13 +239,27 @@ h3{
 
 /*      PORTFOLIO! ---------------------------------------------------------------------- */
 
-#portfolio{
+.cont-portfolio{
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     text-align: center;
 }
 
+.cont-portfolio-item{
+    width: 60%;
+}
+.cont-portfolio-item img{
+    width: 90%;
+}
+.cont-portfolio-item a{
+    text-decoration: none;
+}
+.cont-portfolio-item h3{
+    font-size: 2.5vw;
+}
 
 /*      CONTACTO! ---------------------------------------------------------------------- */
 #contacto .container{
@@ -383,8 +397,15 @@ h3{
         display: block;
         font-size: 2.5vw;
     }
+
+/* PORTFOLIO */
+    .cont-portfolio{
+        flex-direction: row;
+        margin: 1rem 0rem;
+    }
+        
 /*FOOTER! */
-    .footer p,h4{
+    .footer p, .footer h4{
         display: block;
     }
 }
